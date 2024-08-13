@@ -3,6 +3,8 @@ title: Overview
 ---
 The `mockserver-ui` repository provides a dashboard interface to view expectations, requests, and logs in MockServer.
 
+It is built using react-scripts and is intended to be bundled into MockServer. For development, it can be run locally and configured to point to a running MockServer instance.
+
 ## Main Components
 
 ### Containers
@@ -29,7 +31,7 @@ Containers are components that manage and render other components, handling the 
 
 ### Actions
 
-Actions are functions that send data from the application to the Redux store. They are the primary way to interact with the store and trigger state changes. Actions are dispatched to the store, which then processes them through reducers to update the state. In this project, actions like `connectSocket`, `sendMessage`, `webSocketMessageReceived`, and `disconnectSocket` handle WebSocket connections and messaging.
+Actions are functions that send data from the application to the Redux store. They are the primary way to interact with the store and trigger state changes. Actions are dispatched to the store, which then processes them through reducers to update the state. In this project, actions like <SwmToken path="/src/middleware/socket.js" pos="14:3:3" line-data="    let connectSocket = function (action, next) {">`connectSocket`</SwmToken>, `sendMessage`, `webSocketMessageReceived`, and <SwmToken path="/src/middleware/socket.js" pos="7:3:3" line-data="    let disconnectSocket = function () {">`disconnectSocket`</SwmToken> handle WebSocket connections and messaging.
 
 - <SwmLink doc-title="Actions Overview">[Actions Overview](/.swm/actions-overview.3f085ru4.sw.md)</SwmLink>
 - <SwmLink doc-title="Handling WebSocket Connections within Actions">[Handling WebSocket Connections within Actions](/.swm/handling-websocket-connections-within-actions.2ykq7hzs.sw.md)</SwmLink>
